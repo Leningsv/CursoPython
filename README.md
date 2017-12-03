@@ -6,6 +6,6 @@ Instalacion Python: https://www.python.org/
 
 Instalacion Anaconda: https://www.anaconda.com/download/
 
-#### Cambios Comandos
+#### Comandos basicos
 
 Correr jupyter notebook `py -m notebook`
