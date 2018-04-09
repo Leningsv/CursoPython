@@ -1,0 +1,694 @@
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        color: #444;
+    }
+
+    .tablapdf {
+        border-collapse: collapse;
+        color: #444;
+        font-size: 7px;
+        font-family: inherit !important;
+        text-align: left;
+        position: relative;
+    }
+
+    .tablapdf,
+    tr,
+    th {
+        border: 1px solid #444;
+        height: 30px;
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+
+    .collapse {
+        border-collapse: collapse!important;
+        margin: 0!important;
+    }
+
+    .tablafirmas {
+        font-size: inherit !important;
+        font-family: inherit !important;
+    }
+
+    .square {
+        display: inline-block;
+        border: 1px solid #444;
+        height: 20px;
+        width: 20px;
+        border-radius: 6px;
+        margin: 0 4px;
+        background-color: white;
+    }
+
+    .verticalCenter {
+        position: relative;
+        transform: translateY(-60%);
+        display: inline-block
+    }
+
+    .border-left {
+        border-left: 1px solid #444 !important;
+    }
+
+    .border-right {
+        border-right: 1px solid #444 !important;
+    }
+
+    .border-top {
+        border-top: 1px solid #444 !important;
+    }
+
+    .border-bottom {
+        border-bottom: 1px solid #444 !important;
+    }
+
+    .noborder {
+        border-left: 1px solid white !important;
+        border-right: 1px solid white !important;
+        border-top: 1px solid white !important;
+        border-bottom: 1px solid white !important;
+    }
+
+    .allborder {
+        border: 1px solid #444!important;
+    }
+
+    .margin-bottom10px {
+        margin-bottom: 10px !important;
+    }
+
+    .margin-bottom20px {
+        margin-bottom: 20px !important;
+    }
+
+    .margin-bottom30px {
+        margin-bottom: 30px !important;
+    }
+
+    .padding-left10px {
+        padding-left: 10px !important;
+    }
+
+    .padding-left20px {
+        padding-left: 20px !important;
+    }
+
+    .padding-left30px {
+        padding-left: 30px !important;
+    }
+
+    .relative {
+        position: relative !important;
+    }
+
+    .absolute {
+        position: absolute !important;
+    }
+
+    .label {
+        position: relative;
+        top: -8px
+    }
+
+    .labelNormal {
+        position: absolute;
+        top: 20px;
+        font-size: 9px;
+    }
+
+    .fondoCeleste {
+        background: #64CDF5 !important;
+    }
+
+    .fondoverde {
+        background-color: #d7f7c0;
+    }
+
+    .fondoTema {
+        background-color: #3A3F52!important;
+    }
+
+    .red {
+        color: red !important;
+    }
+
+    .white {
+        color: white!important;
+    }
+
+    .fuente-titulo {
+        font-size: 14px;
+        font-family: "Arial";
+        text-align: center;
+        font-weight: 800
+    }
+
+    .fuente-titulo2 {
+        font-size: 14px;
+        font-family: "Arial";
+        text-align: justify;
+        font-weight: 700 !important;
+    }
+
+    .fuente-verde {
+        font-size: 9px;
+        font-family: "Arial";
+        color: #309B26;
+        text-align: justify;
+        font-weight: 600;
+    }
+
+    .fuente-azul {
+        font-family: "Arial";
+        color: #266C9B;
+    }
+
+    .textCenter {
+        text-align: center !important;
+    }
+
+    .textJustify {
+        text-align: justify !important;
+    }
+
+    .textRight {
+        text-align: right !important;
+    }
+
+    .textLeft {
+        text-align: left !important;
+    }
+
+    .size6px {
+        font-size: 6px !important;
+    }
+
+    .size7px {
+        font-size: 7px !important;
+    }
+
+    .size9px {
+        font-size: 9px !important;
+    }
+
+    .size10px {
+        font-size: 10px !important;
+    }
+
+    .size12px {
+        font-size: 12px !important;
+    }
+
+    .size14px {
+        font-size: 14px !important;
+    }
+
+    .size16px {
+        font-size: 16px !important;
+    }
+
+    .size18px {
+        font-size: 18px !important;
+    }
+
+    .bold {
+        font-weight: 800 !important;
+    }
+
+    .nobold {
+        font-weight: normal !important;
+    }
+
+    p {
+        text-align: justify !important;
+    }
+
+    .col-3 {
+        flex: 0 0 33.33%;
+        width: 33.33% !important;
+    }
+
+    .col-6 {
+        flex: 0 0 50%;
+        width: 50% !important;
+    }
+
+    .width650px {
+        width: 650px !important;
+    }
+
+    .full-width {
+        width: 100% !important;
+    }
+</style>
+<table style="width: 650px !important;">
+    <tr>
+        <td style="width:150px">
+            <img class="logoNova" src="http://www.confiamed.com/web/wp-content/uploads/2016/01/logo-confiamed.png" alt="Confiamed" width="200"
+            />
+        </td>
+        <td class="textCenter">
+            <img class="logoNova" src="http://novaseguroslatam.com/img/logo.png" alt="Nova" width="100" style="position:relative;top:10px"
+            />
+        </td>
+        <td style="width:150px">
+            <img class="logoNova" src="http://www.confiamed.com/web/wp-content/uploads/2016/01/logo-confiamed.png" alt="Confiamed" width="200"
+            />
+        </td>
+    </tr>
+    <tr>
+        <td colspan="3" class="textCenter red bold">
+            <hr style="color:black;border-width:2px" />
+        </td>
+    </tr>
+    <tr>
+        <td colspan="3" class="textCenter size12px">
+            <b>CERTIFICADO DE ENROLAMIENTO DE PRESTACIÓN DE SERVICIOS DE SALUD Y MEDICINA PREPAGADA</b>
+            <br />CONFIAMED S.A.
+        </td>
+    </tr>
+    <tr>
+        <td colspan="3" class="textCenter bold size12px">DATOS DE AFILIACIÓN DEL TITULAR</td>
+    </tr>
+</table>
+<table border="0" style="width: 650px !important; font-size: 10px !important; border-collapse: collapse!important; margin: 0!important;">
+    <tr>
+        <td class="col-3" colspan="3">Nombres, Apellidos: [NOMBRESCLIENTE] [SEGNOMBRECLIENTE] [APELLIDOSCLIENTE] [SEGAPELLIDOCLIENTE]
+            <hr style="full-width allborder" /> 
+        </td>
+    </tr>
+    <tr>
+        <td class="col-3" colspan="3">Dirección Domicilio: [DIRECCIONCLIENTE]
+            <hr style="allborder full-width" />
+        </td>
+    </tr>
+    <tr>
+        <td class="col-3">Fecha Nacimiento: [FECHANACIMIENTO]
+            <hr style="full-width allborder" />
+        </td>
+        <td class="col-3">Edad: [EDADCALCULADA]
+            <hr style="full-width allborder" />
+        </td>
+        <td class="col-3">Cédula: [NOCEDULA]
+            <hr style="full-width allborder" />
+        </td>
+    </tr>
+    <tr>
+        <td class="col-3">Teléfono: [TELEFONOCLIENTE]
+            <hr style="full-width allborder" />
+        </td>
+        <td class="col-3">Celular: [CELULARCLIENTE]
+            <hr style="full-width allborder" />
+        </td>
+        <td class="col-3">Email: [EMAILCLIENTE]
+            <hr style="full-width allborder" />
+        </td>
+    </tr>
+</table>
+<table border="1" class="tablapdf width650px size12px margin-bottom30px">
+    <tr class="fondoTema">
+        <td colspan="2" class="white textCenter">PLAN</td>
+    </tr>
+    <tr class="fondoTema">
+        <td class="textCenter white">COBERTURAS</td>
+        <td class="textCenter white">OPCIÓN ÚNICA</td>
+    </tr>
+    <tr class="fondoTema">
+        <td colspan="2" class="white textCenter">COBERTURA MEDICA HOSPITALARIA DENTRO Y FUERA</td>
+    </tr>
+    <tr>
+        <td class="col-6 textLeft bold">
+            LÍMITE MÁXIMO POR INCAPACIDAD POR PERSONA HOSPITALARIO, HASTA:
+        </td>
+        <td class="textCenter bold col-6">$ 700.00</td>
+    </tr>
+    <tr>
+        <td class="col-6 textLeft">Hospitalización dentro y fuera de red al:</td>
+        <td class="col-6 textCenter">100%</td>
+    </tr>
+    <tr>
+        <td class="col-6 textLeft">Cuarto y alimento diario al 100%, hasta:</td>
+        <td class="col-6 textCenter">$80.00</td>
+    </tr>
+    <tr>
+        <td class="col-6 textLeft">Cama para acompañante cuando el paciente es menor de 18 años al:</td>
+        <td class="col-6 textCenter">100%</td>
+    </tr>
+    <tr>
+        <td class="col-6 textLeft">
+            Hospitalización en Unidad de Cuidados Intensivos dentro y fuera de CONFIRED al:
+        </td>
+        <td class="col-6 textCenter">100%</td>
+    </tr>
+    <tr>
+        <td class="bold col-6">TIPO DE RED/TARIFARIO</td>
+        <td class="textCenter bold col-6">CONFIRED</td>
+    </tr>
+    <tr>
+        <td class="bold col-6">Periodo de presentación de reclamos</td>
+        <td class="textCenter bold col-6">90 Días</td>
+    </tr>
+    <tr class="fondoTema">
+        <td class="col-6 white textCenter">COBERTURA AMBULATORIA DENTRO DE RED </td>
+        <td class="col-6">
+            <table class="full-width collapse fondoTema size12px">
+                <tr>
+                    <td class="col-6 white textCenter border-right">COPAGO</td>
+                    <td class="col-6 white textCenter">EVENTOS</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td class="col-6 textLeft padding-left20px">Medicina General</td>
+        <td class="col-6">
+            <table class="full-width collapse size12px noborder">
+                <tr class="noborder">
+                    <td class="col-6 textCenter border-right">N/A</td>
+                    <td class="col-6 textCenter">6 al año</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td class="col-6 textLeft padding-left20px">Ginecología ( Incluye control de embarazo)</td>
+        <td class="col-6">
+            <table class="full-width collapse size12px noborder">
+                <tr class="noborder">
+                    <td class="col-6 textCenter border-right">N/A</td>
+                    <td class="col-6 textCenter">6 al año</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td class="col-6 textLeft padding-left20px">Pediatría</td>
+        <td class="col-6">
+            <table class="full-width collapse size12px noborder">
+                <tr class="noborder">
+                    <td class="col-6 textCenter border-right">N/A</td>
+                    <td class="col-6 textCenter">6 al año</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td class="col-6 textLeft">Ecografías Obstétricas</td>
+        <td class="col-6">
+            <table class="full-width collapse size12px noborder">
+                <tr class="noborder">
+                    <td class="col-6 textCenter border-right">100%</td>
+                    <td class="col-6 textCenter">2 al año</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" class="bold textLeft">Medicamentos dentro de la red</td>
+    </tr>
+    <tr>
+        <td class="col-6 textJustify">
+            Derivados de las consultas médicas según Vademecun establecido para ser retirados en farmacias de la red a nivel nacional,
+            no se cubren medicamentos tratamientos ni medicación contínua
+        </td>
+        <td class="col-6 textCenter">100%</td>
+    </tr>
+    <tr>
+        <td class="col-6 textLeft">Emergencia por accidente al 100% dentro de la red, hasta:</td>
+        <td class="col-6 textCenter">$200.00</td>
+    </tr>
+    <tr class="fondoTema">
+        <td colspan="2" class="textCenter white">Maternidad al 100%</td>
+    </tr>
+    <tr>
+        <td class="col-6 textLeft">Parto normal, cesárea, y aborto no provocado</td>
+        <td class="col-6 textCenter">$400.00</td>
+    </tr>
+</table>
+<div class="width650px bold size12px textCenter">
+    DATOS DE AFILIACIÓN DE LOS DEPENDIENTES/BENEFICIARIOS
+</div>
+[BENEFICIARIOS]
+<table style="height:20px">
+    <tr>
+        <td>&nbsp;</td>
+    </tr>
+</table>
+<p class="width650px bold size14px textCenter margin-bottom20px">
+    AUTORIZACIÓN DE DÉBITO
+</p>
+<table style="width: 650px" class="tablafirmas textJustify margin-bottom30px size12px">
+    <tr>
+        <td class="textJustify">
+            Yo, [NOMBRESCLIENTE] [SEGNOMBRECLIENTE] [APELLIDOSCLIENTE] [SEGAPELLIDOCLIENTE], identificado con [NOMBRETIPOIDENTIFICACION]
+            número [NOCEDULA], titular de la [TIPOCUENTA] número: [NOCUENTA] autorizo a Banco de Loja para que los cobros
+            por el concepto PLAN IDEAL se debiten automáticamente de mi cuenta detallada y a su vez sean acreditados a favor
+            de Novaecuador Asesores Productores de Seguros, en forma mensual el valor correspondiente al pago de prima que
+            cause el Producto;
+        </td>
+    </tr>
+    <tr>
+        <td class="textCenter bold size12px">
+            COSTO MENSUAL DEL PLAN: Titular Solo $ 4,90 [ALT1] Titular + Uno $ 7.71 [ALT2] Titular + Familia $ 9,70 [ALT3]
+        </td>
+    </tr>
+    <tr>
+        <td class="textJustify">
+            Este plan estará vigente a partir del primer débito, si transcurrido 90 días de no pago estuviera en mora en el pago de la
+            cuota de afiliación se realizará cancelación automática del contrato.
+            <br />
+            <br /> La renovación será automática por periodos iguales a no ser que una de las partes manifestare lo contrario por
+            escrito a La Compañía con 30 días de antelación.
+            <br />
+            <br /> Se firma la presente autorización de débito en la ciudad de [CIUDADCLIENTE] a los [DIAVENTA] días del mes de
+            [MESVENTA] del [ANIOVENTA]
+        </td>
+    </tr>
+</table>
+<table style="width: 650px" class="tablafirmas margin-bottom10px">
+    <tr class="row">
+        <td class="textCenter">
+            <span>_______________________________</span>
+            <br />
+        </td>
+    </tr>
+    <tr>
+        <td class="textCenter size12px">
+            <span>Firma del Titular: </span>
+        </td>
+    </tr>
+</table>
+<div class="width650px bold size14px textCenter">
+    PLAN MÉDICO PLAN IDEAL
+    <br /> CONDICIONES PARTICULARES
+</div>
+<table class="width650px size10px margin-bottom20px collapse">
+    <tr>
+        <td class="textLeft allborder">
+            <u>AFILIACION:</u>
+        </td>
+    </tr>
+    <tr>
+        <td class="textJustify padding-left10px border-right border-left border-bottom">
+            <b>• Límites de edad:</b> Titular, cónyuge o conviviente, desde los 18 años sin límite de edad de permanencia.
+            <br />
+            <b>• Límite de edad dependientes</b>, Máximo cuatro (4) hijos hasta los dieciocho (18) años de edad y con permanencia
+            hasta los veintitrés (23) años, el requisito en este caso será ser solteros y que no trabajen ni aporten al IESS.
+            Para tener derecho al reclamo deberán presentar: mayores de 18 años copia de la cédula de identidad, y certificado
+            de NO aportación al IESS y menores de 18 años en caso de no tener cédula de identidad puede presentar partida
+            de nacimiento.
+            <br />
+            <b>• Movimientos:</b> Los movimientos de inclusiones aplican únicamente en la renovación anual del contrato.
+            <br />
+            <b>• Desafiliación voluntaria:</b> El cliente tendrá que acercase a la agencia más cercana de NOVAECUADOR o comunicarse
+            con la línea 1800 668232 y entregar una carta de cancelación firmada por el titular, copia de cédula de identidad,
+            con 30 días de anticipación.
+        </td>
+    </tr>
+    <tr>
+        <td class="textLeft allborder">
+            <u>COBERTURAS:</u>
+        </td>
+    </tr>
+    <tr>
+        <td class="textJustify padding-left10px border-right border-left border-bottom">
+            <b>• Preexistencias:</b> Las enfermedades preexistentes y congénitas aplican cobertura.
+            <br />
+            <b>• Hospitalización:</b> Cuidado médico, clínico o quirúrgico, que debido a una enfermedad o accidente debe ser
+            atendido durante un internamiento mayor a 24 horas. La severidad de la enfermedad o condición también debe justificar
+            la necesidad médica de la hospitalización.
+            <br />
+            <b>• Accidente:</b> En caso de accidente de tránsito se aplicará primero el SPPAT.
+            <br />
+            <b>• Maternidad:</b> Se cubrirá al titular, cónyuge o conviviente, si es dentro de la red aplica crédito al 100%
+            de los gastos cubiertos por el plan, caso contrario debe entrar a proceso de reembolso presentando para el efecto
+            facturas por gastos médicos y un certificado de nacido vivo o la partida de nacimiento,en plan Titular Solo la
+            cliente deberá reportar su embarazo y pagar el valor retroactivo de la diferencia en la modalidad titular más
+            familia hasta el final del evento, no se cubrirán maternidades en curso y deberán transcurrir 30 días a partir
+            del primer débito (para evaluación de lo último se tomara en cuenta el FUM) .
+            <br />
+            <b>• Recién Nacido:</b> La cobertura será a partir de las 24 horas de nacido, y deberá ser notificada su inclusión
+            a hasta 30 días después de su nacimiento, siempre que no exceda el límite de dependientes del plan y haya nacido
+            bajo cobertura de maternidad
+            <br />
+            <b>• Consultas Ambulatorias:</b> Para esto debe comunicarse al 1800 408 408 y solicitar su cita.
+            <br />
+            <b>• Cirugía estética y cobertura dental:</b> Cobertura exclusivamente hospitalaria y a causa de accidentes amparados
+            por el plan.
+            <br />
+            <b>• Desviación de Tabique:</b> Cobertura por problemas a causa de accidente o mal funcionamiento
+        </td>
+    </tr>
+    <tr>
+        <td class="textCenter allborder bold">
+            <u>PROCEDIMIENTO Y DOCUMENTACIÓN PARA RECLAMACIONES HOSPITALARIAS:</u>
+        </td>
+    </tr>
+    <tr>
+        <td class="textJustify padding-left10px border-right border-left border-bottom">
+            <b>• Reembolso hospitalario y/o accidente:</b> Presentar en las oficinas de NOVAECUADOR, las facturas ORIGINALES
+            de la atención junto con la copia de la historia clínica completa. Para mayor información puede contactarse al
+            1800 408 408.
+            <br />
+            <b>• Maternidad:</b> Los documentos detallados con anterioridad y un certificado de nacido vivo o la partida de
+            nacimiento.
+            <br />
+            <b>• Para cirugías programadas:</b> Para obtener la autorización del crédito hospitalario, se deberá presentar en
+            NOVAECUADOR el formulario de solicitud de crédito hospitalario debidamente llenado por el médico y los resultados
+            de exámenes que respalden el diagnóstico. Luego de 48 horas de haber La Compañía recibido la documentación, debe
+            comunicarse al 1800 668232 para verificar el estado de la solicitud. En emergencias hospitalarias debe acercarse
+            directamente a la clínica en convenio de la RED.
+            <br />
+            <b>• Tiempo máximo de entrega de documentos:</b> La presentación de documentos para reclamos (incluidos reingresos)
+            es de ciento ochenta (180) días a partir del gasto realizado.
+            <br />
+            <b>• Tiempo de reembolso:</b> Para procesar el pago de prestaciones, el cliente debe estar al día en el pago de
+            su cuota, además la documentación debe estar completa, una vez recibidos los documentos por CONFIAMED transcurrirán
+            cinco (5) días laborables para efectuar el pago directamente a la cuenta bancaria del cliente.
+            <br />
+            <b>• Desafiliación del plan o terminación del contrato:</b> El plazo para la presentación de documentación para
+            reembolso es de 60 días posteriores a la desafiliación, las fechas de incurrencia deben encontrarse dentro del
+            periodo de afiliación y bajo las condiciones de la misma.
+            <br />
+        </td>
+    </tr>
+    <tr>
+        <td class="bold allborder">CONDICIONES ADICIONALES</td>
+    </tr>
+    <tr>
+        <td class="allborder">
+            <b>Carencia para maternidad:</b> Treinta (30) días</td>
+    </tr>
+    <tr>
+        <td class="textJustify allborder">
+            <b>Mora:</b> Transcurridos los sesenta (60) días de mora, se procederá a la suspensión del servicio de pago de reembolso,
+            atenciones médicas dentro de red y autorizaciones de créditos hospitalarios y hasta la suspensión del contrato
+            si la compañía los dispone. No se cubrirá gastos incurridos durante el periodo que el afiliado se encuentre en
+            mora.
+        </td>
+    </tr>
+    <tr>
+        <td class="textLeft allborder">Los movimientos de inclusiones aplican únicamente en la renovación anual del contrato</td>
+    </tr>
+    <tr>
+        <td class="textCenter bold allborder">
+            IMPORTANTE: REVISE EL CONTRATO GENERAL INGRESANDO EN WWW.CONFIAMED.COM
+            <br /> DESCÁRGUELO SELECCIONANDO SU PRODUCTO.
+        </td>
+    </tr>
+    <tr>
+        <td class="bold padding-left10px allborder">
+            1. Declaración de información
+            <br /> Declaro que la información contenida en el presente formulario es verdadera, completa y actualizada. Declaro
+            conocer y aceptar que es mi obligación actualizar anualmente mis datos personales, comunicar y documentar de
+            manera inmediata a CONFIAMED cualquier cambio en la información o documentación que he proporcionado. Durante
+            la vigencia de la relación contractual con CONFIAMED, me comprometo a proveer la información y la documentación
+            que me sea solicitada. Así mismo entiendo que esta información podrá ser requerida por las autoridades de control
+            respectivas para los efectos legales correspondientes. Este producto no implica asesoría por parte del Banco.
+            <br /> 2. Declaración de licitud de fondos
+            <br /> Declaro que el dinero utilizado para realizar las transacciones con CONFIAMED no proviene de ninguna actividad
+            relacionada con el lavado de activos, el financiamiento del terrorismo, el financiamiento de otros delitos, ni
+            es producto de algún delito. Así mismo declaro que realizo y realizaré operaciones lícitas con CONFIAMED desde
+            el inicio de la relación comercial hasta la finalización del contrato. 3. Autorizaciones
+            <br /> &nbsp;&nbsp;&nbsp;a) Autorizo a CONFIAMED a realizar el análisis y las verificaciones que considere pertinentes,
+            así
+            <br /> &nbsp;&nbsp;&nbsp;&nbsp;mismo autorizo a todas las personas naturales, jurídicas de derecho público o privado
+            a facilitar a
+            <br /> &nbsp;&nbsp;&nbsp;&nbsp;CONFIAMED toda información que ésta requiera respecto de mi persona, e informe a los
+            organismos
+            <br /> &nbsp;&nbsp;&nbsp;&nbsp;competentes, todo lo cual no genera ninguna pretensión judicial ni motivo de reclamo,
+            a ser ejercido
+            <br /> &nbsp;&nbsp;&nbsp;&nbsp;por el cliente, además, autorizo a CONFIAMED a utilizar mi información personal proporcionada
+            a la
+            <br /> &nbsp;&nbsp;&nbsp;&nbsp;COMPANIA DE MEDICINA PREPAGADA cualquier información que sea de conocimiento público
+            <br /> &nbsp;&nbsp;&nbsp;&nbsp;conforme a la ley, con el objetivo de contactarme, por medio de llamada telefónica,
+            mensaje de texto
+            <br /> &nbsp;&nbsp;&nbsp;&nbsp;vía telefónica, correo electrónico, correo directo u otro medio.
+            <br /> &nbsp;&nbsp;&nbsp;b) Autorizo a CONFIAMED expresamente en calidad de custodio de la factura emitida por concepto
+            de
+            <br /> &nbsp;&nbsp;&nbsp;&nbsp;las coberturas del plan que otorga el presente documento. La mencionada factura se mantendrá
+            bajo
+            <br /> &nbsp;&nbsp;&nbsp;&nbsp;su custodia hasta que el original de la misma sea solicitado por el asegurado o por
+            quien
+            <br /> &nbsp;&nbsp;&nbsp;&nbsp;expresamente autorice para el efecto.
+            <br /> &nbsp;&nbsp;&nbsp;c) Autorizo a CONF
+        </td>
+    </tr>
+    <tr>
+        <td class="textLeft padding-left10px border-left border-right border-bottom">
+            <b>4. Controversias</b>
+            <br /> &nbsp;&nbsp;&nbsp;Según clausula décima tercera: Arbitraje (Condiciones Generales del Contrato).-
+            <br /> &nbsp;&nbsp;&nbsp;Si un afiliado se encuentra en mora no accede a crédito hospitalario otorgado por el plan,
+            <br /> &nbsp;&nbsp;&nbsp;Podrá presentar sus gastos vía reembolso con todos los documentos necesarios para el fin.
+            En caso de que el
+            <br /> &nbsp;&nbsp;&nbsp;afiliado presente sus gastos vía reembolso y se encuentre en mora, no procederá el reembolso.
+            <br /> &nbsp;&nbsp;&nbsp;Los posibles movimientos de red son exclusiva potestad de la Compañía por lo que renuncio
+            a cualquier
+            <br /> &nbsp;&nbsp;&nbsp;controversia sobre este tema, y declaro que he recibido este certificado con las instrucciones
+            de manejo de mi plan
+            <br /> &nbsp;&nbsp;&nbsp;de Hospitalización. En constancia de aceptación de las condiciones particulares antes expuestas
+            y de las
+            <br /> &nbsp;&nbsp;&nbsp;condiciones generales del contrato principal de prestación de servicios de salud y medicina
+            pre pagada.
+            <br />
+            <br /> &nbsp;&nbsp;&nbsp;Se firma la presente certificado en la ciudad de [CIUDADCLIENTE] a los [DIAVENTA] días del
+            mes de [MESVENTA] del [ANIOVENTA]
+            <table class="full-width collapse size10px">
+                <tr>
+                    <td class="col-6 textCenter noborder">_____________________________</td>
+                    <td class="col-6 textCenter noborder">_____________________________</td>
+                </tr>
+                <tr>
+                    <td class="noborder textCenter">Firma del Titular</td>
+                    <td class="textCenter noborder">
+                        La Compañía
+                        <br />
+                        <b>CONFIAMED S.A.</b>
+                        <br />
+                        <b>RUC 1792206979001</b>
+                        <br />
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+
+<table class="width650px bold size10px textCenter">
+    <tr>
+        <td>
+            CONFIAMED S.A.
+            <br />
+            <b>1800 408 408</b>
+        </td>
+        <td>
+            NOVA ECUADOR
+            <br />
+            <b>1800 66 82 32</b>
+        </td>
+    </tr>
+</table>
